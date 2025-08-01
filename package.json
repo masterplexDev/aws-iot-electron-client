@@ -98,9 +98,10 @@
       "icon": "build/icon.icns",
       "darkModeSupport": true,
       "hardenedRuntime": true,
-      "gatekeeperAssess": true,
-      "identity": "AWS IoT Test Client Developer",
-      "type": "development",
+      "gatekeeperAssess": false,
+      "identity": null,
+      "entitlements": "build/entitlements.plist",
+      "entitlementsInherit": "build/entitlements.inherit.plist",
       "asarUnpack": [
         "node_modules/aws-crt/**/*",
         "node_modules/aws-iot-device-sdk-v2/**/*"
