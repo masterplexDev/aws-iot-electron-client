@@ -49,3 +49,12 @@ dist_electron/
 # Temporary folders
 tmp/
 temp/
+
+# AWS IoT 인증서 파일들 (보안상 중요!)
+*.crt
+*.key
+*.p12
+*.pem
+aws_iot_*
+certificates/
+cert/
