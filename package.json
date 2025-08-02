@@ -96,6 +96,7 @@
       "hardenedRuntime": false,
       "gatekeeperAssess": false,
       "identity": null,
+      "signIgnore": ["**/*.provenance"],
       "asarUnpack": [
         "node_modules/aws-crt/**/*",
         "node_modules/aws-iot-device-sdk-v2/**/*"
