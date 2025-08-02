@@ -37,7 +37,7 @@ git push -u origin main
    - 🎨 Dark 테마 UI (shadcn/ui)
    
    ### 📥 다운로드
-   - **macOS (M1/M2)**: ARM64 버전 다운로드
+   - **macOS (Apple Silicon)**: ARM64 버전 다운로드
    - **macOS (Intel)**: x64 버전 다운로드
    - **DMG**: 설치 파일 형태
    - **ZIP**: 압축 파일 형태 (보안 경고 적음)
@@ -109,7 +109,7 @@ npm run dist:mac:dmg
 ├── 🌐 https://username.github.io/aws-iot-electron-client (다운로드 페이지)
 ├── 🏷️ Releases
 │   ├── v1.0.0
-│   │   ├── 📱 arm64.dmg (M1/M2 Mac)
+│   │   ├── 📱 arm64.dmg (Apple Silicon)
 │   │   └── 📱 x64.dmg (Intel Mac)
 │   └── 📈 Download Statistics
 └── 📖 README.md (설치 가이드)

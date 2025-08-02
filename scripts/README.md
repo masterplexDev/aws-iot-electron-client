@@ -13,7 +13,7 @@ npm run dmg
 ```
 
 **생성 파일:**
-- `AWS IoT Core 테스트 클라이언트-1.0.0-arm64.dmg` (M1/M2 Mac)
+- `AWS IoT Core 테스트 클라이언트-1.0.0-arm64.dmg` (Apple Silicon)
 - `AWS IoT Core 테스트 클라이언트-1.0.0-x64.dmg` (Intel Mac)
 
 ### **개발 스크립트**

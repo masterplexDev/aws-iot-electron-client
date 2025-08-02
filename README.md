@@ -21,7 +21,7 @@ AWS IoT Core와 MQTT 통신을 테스트할 수 있는 Electron 데스크톱 애
 ## 📥 설치 및 실행
 
 ### macOS
-1. **Apple Silicon (M1/M2)**: `AWS IoT Core 테스트 클라이언트-1.0.0-arm64.dmg` 다운로드
+1. **Apple Silicon**: `AWS IoT Core 테스트 클라이언트-1.0.0-arm64.dmg` 다운로드
 2. **Intel Mac**: `AWS IoT Core 테스트 클라이언트-1.0.0-x64.dmg` 다운로드
 3. DMG 파일을 열고 앱을 **Applications 폴더로 드래그**
 4. 첫 실행 시 **우클릭 → "열기"** 선택
