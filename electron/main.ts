@@ -84,13 +84,20 @@ function createWindow() {
   });
 
   // 추가: 강제 창 표시 (빌드 버전 호환성)
-  setTimeout(() => {
-    if (!win.isVisible()) {
+  const forceShowTimer = setTimeout(() => {
+    if (!win.isDestroyed() && !win.isVisible()) {
       win.show();
       win.focus();
       console.log('강제로 창을 표시했습니다');
     }
   }, 2000); // 2초 후 창이 보이지 않으면 강제 표시
+
+  // 창이 닫힐 때 타이머 정리
+  win.on('closed', () => {
+    if (forceShowTimer) {
+      clearTimeout(forceShowTimer);
+    }
+  });
 
   // 개발 환경에서 개발자 도구 자동 열기
   if (process.env.VITE_DEV_SERVER_URL) {
@@ -355,5 +362,19 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
+  }
+});
+
+// 앱 종료 시 정리
+app.on('before-quit', async () => {
+  try {
+    if (connection) {
+      await connection.disconnect();
+      connection = null;
+      client = null;
+      console.log('앱 종료 시 AWS IoT 연결 해제 완료');
+    }
+  } catch (error) {
+    console.error('앱 종료 시 연결 해제 실패:', error);
   }
 });
