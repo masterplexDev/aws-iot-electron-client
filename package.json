@@ -67,8 +67,8 @@
   },
   "build": {
     "appId": "com.awsiot.testclient",
-    "productName": "AWS IoT Core 테스트 클라이언트",
-    "copyright": "Copyright © 2024",
+    "productName": "AWS IoT Core Test Client",
+    "copyright": "Copyright © 2025",
     "files": [
       "dist/index.html",
       "dist/assets/",
@@ -161,6 +161,28 @@
       "artifactName": "${productName}-${version}-${arch}.${ext}",
       "description": "AWS IoT Core Test Client for MQTT testing",
       "synopsis": "MQTT testing client for AWS IoT Core"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 380
+      },
+      "background": "build/background.png",
+      "icon": "build/icon.icns",
+      "iconSize": 128,
+      "title": "AWS IoT Core Test Client"
     },
     "nsis": {
       "oneClick": false,
