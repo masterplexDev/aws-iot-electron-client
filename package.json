@@ -96,7 +96,6 @@
       "hardenedRuntime": false,
       "gatekeeperAssess": false,
       "identity": null,
-      "type": "development",
       "asarUnpack": [
         "node_modules/aws-crt/**/*",
         "node_modules/aws-iot-device-sdk-v2/**/*"
@@ -106,7 +105,7 @@
         "LSMinimumSystemVersion": "10.15.0",
         "LSApplicationCategoryType": "public.app-category.developer-tools",
         "CFBundleExecutable": "AWS IoT Core 테스트 클라이언트",
-        "CFBundleIdentifier": "com.awsiot.testclient",
+        "CFBundleIdentifier": "com.awsiot.testclient.dev",
         "CFBundleVersion": "1.0.0",
         "CFBundleShortVersionString": "1.0.0",
         "NSAppTransportSecurity": {
