@@ -19,8 +19,9 @@ npm run build
 echo "📱 macOS DMG 빌드 중..."
 npx electron-builder --mac --publish=never
 
-# 4. provenance 속성 제거 (다른 오픈소스와 동일하게)
-echo "🔧 provenance 속성 제거 중..."
+# 4. quarantine 및 provenance 속성 제거 (다른 오픈소스와 동일하게)
+echo "🔧 quarantine 및 provenance 속성 제거 중..."
+find release -name "*.app" -exec xattr -d com.apple.quarantine {} \; 2>/dev/null || true
 find release -name "*.app" -exec xattr -d com.apple.provenance {} \; 2>/dev/null || true
 find release -name "*.app" -exec xattr -cr {} \; 2>/dev/null || true
 
